@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Johannes Källstad</title>
+  <title>Posts – Johannes Källstad</title>
   <link rel="stylesheet" href="styles/site.css">
 </head>
 <body>
@@ -12,23 +12,35 @@
     <div class="header-inner">
       <a href="index.html" class="site-name">Johannes Källstad</a>
       <nav class="site-nav">
-        <a href="index.html" class="active">Home</a>
-        <a href="posts.html">Posts</a>
+        <a href="index.html">Home</a>
+        <a href="posts.html" class="active">Posts</a>
         <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
   <main class="main-content">
-    <div class="content-single">
-      <div class="content-card">
-        <h1>About Me</h1>
-
-        <p>Hello, my name is Johannes Källstad and I am a Software Engineer. At my current job, at Sectra, I mainly work with backend development using C# and some C++. Other than that I’m also interested in Low-Level Programming, Cyber Security, Optimizing my workflow and the Linux operating system. Outside of tech I enjoy reading, writing, psychology, philosophy, hiking and disc golf.</p>
-
-        <p>Beyond this introduction and my contact info, this website contains blog posts/articles. I write these because I enjoy writing, and hope that some of them might be interesting to you as well. If you read them and have thoughts, opinions or other feedback regarding the content, feel free to reach out.</p>
-
+    <div class="content-posts">
+      <div class="posts-column">
+        <h1 class="page-title">Posts</h1>
+        <div class="post-list-header">
+          <span id="resultsCount"></span>
+        </div>
+        <div id="postList"></div>
       </div>
+
+      <aside class="sidebar">
+        <div class="sidebar-section">
+          <div class="sidebar-heading">Search</div>
+          <input type="text" id="searchBox" placeholder="Search posts...">
+        </div>
+
+        <div class="sidebar-section">
+          <div class="sidebar-heading">Filter by Tag</div>
+          <div id="tagFilters" class="tag-filters"></div>
+          <button id="clearFilters" class="hidden">Clear All Filters</button>
+        </div>
+      </aside>
     </div>
   </main>
 
@@ -41,5 +53,6 @@
     <div class="footer-copyright">© 2026 Johannes Källstad</div>
   </footer>
 
+  <script src="scripts/posts.js"></script>
 </body>
 </html>
