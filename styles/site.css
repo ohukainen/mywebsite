@@ -547,21 +547,35 @@ img {
   }
 }
 
+@media (max-width: 500px) {
+  .site-header {
+    height: auto;
+    padding: 12px 0;
+  }
+
+  .header-inner {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 16px;
+    align-items: center;
+  }
+
+  .main-content {
+    margin-top: 100px;
+  }
+
+  html {
+    scroll-padding-top: 120px;
+  }
+}
+
 @media (max-width: 640px) {
   .header-inner {
     padding: 0 16px;
   }
 
-  .site-name {
-    font-size: 1rem;
-  }
-
   .site-nav {
     gap: 16px;
-  }
-
-  .site-nav a {
-    font-size: 0.8rem;
   }
 
   .main-content {
