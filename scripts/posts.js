@@ -1,4 +1,13 @@
- const posts = [];
+ const posts = [
+  {
+    title: "Using AI as a Junior Software Engineer",
+    date: "2026-02-27",
+    lastEdited: "2026-02-27",
+    slug: "2026-02-27-using-ai-as-a-junior",
+    excerpt: "Takeaways from my first 6 months working as a Software Engineer",
+    tags: ["AI Tools", "Software Engineering", "Workflow"]
+  }
+];
 
 // State
 let searchQuery = '';
